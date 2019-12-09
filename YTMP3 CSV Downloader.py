@@ -11,8 +11,8 @@ from selenium.webdriver.support import expected_conditions
 
 
 fname = input("Enter downloaded file name (without txt entention): ")
-num_lines = 0
-with open("C:/Users/Mason/Downloads/" + fname + ".txt", 'r') as f:
+
+with open(fname + ".txt", 'r') as f:
     for line in f:
 
             
