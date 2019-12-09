@@ -14,7 +14,7 @@ fname = input("Enter downloaded file name (without txt entention): ")
 num_lines = 0
 with open("C:/Users/Mason/Downloads/" + fname + ".txt", 'r') as f:
     for line in f:
-#        try:
+
             
         temp = line
         temp = temp.replace("\"","")
@@ -46,8 +46,6 @@ with open("C:/Users/Mason/Downloads/" + fname + ".txt", 'r') as f:
                 search.send_keys(URL)
                 search = browser.find_element_by_id("submit")
                 search.send_keys(Keys.RETURN)
-                #search = WebDriverWait(browser, 20).until(EC.presence_of_element_located((By.XPATH, "/html/body/div[2]/div[1]/div[1]/div[3]/a[1]")))
-                #element = WebDriverWait(browser, 20).until(EC.presence_of_element_located((By.XPATH, "/html/body/div[2]/div[1]/div[1]/div[3]/a[1]")))
                 time.sleep(30)
                 
                 try:
@@ -67,9 +65,5 @@ with open("C:/Users/Mason/Downloads/" + fname + ".txt", 'r') as f:
                 browser.quit()
         #Close the browser and iterate to next entry
         
-        #except exceptions.StaleElementReferenceException as e:
-         #   search.send_keys(Keys.RETURN)
-          #  driver.implicitly_wait(secs)
-           # browser.quit()
-
-
+        
+    #Just an extra line!
