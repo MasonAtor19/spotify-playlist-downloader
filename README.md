@@ -1,4 +1,4 @@
-# Spotify-Playlist-Downloader
+# spotify-playlist-downloader
 Downloades songs from Spotify playlist
 
 Prerequisites: 
